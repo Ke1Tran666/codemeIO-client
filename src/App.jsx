@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Home from "./components/User/home";
 
-function App() {
-  const [count, setCount] = useState(0)
+// css
+import "./assets/css/app.css";
+import './assets/build/tailwind.css';
+import { useEffect } from "react";
+
+const App = () => {
+
+  useEffect(() => {
+    // Thêm class 'my-body-class' vào thẻ <body> khi component được render
+    document.body.classList.add('__className_da1155');
+    document.getElementById("root").classList.add('wrapper');
+    document.getElementById("root").classList.add('relative');
+
+
+    // Cleanup function để xóa class khi component bị unmount (không bắt buộc)
+    return () => {
+      document.body.classList.remove('__className_da1155');
+      document.getElementById("root").classList.remove('wrapper');
+      document.getElementById("root").classList.remove('relative');
+
+
+    };
+  }, []); // Chạy một lần khi component mount
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Home />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

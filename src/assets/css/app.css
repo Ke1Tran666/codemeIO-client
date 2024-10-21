@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+}
+
+.__className_da1155 {
+    font-family: 'Manrope';
+    font-style: normal;
+}
+
+body {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(26 29 31 / var(--tw-text-opacity));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.relative {
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 1280px) {
+    .wrapper {
+        padding-top: 104px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding-bottom: 2.5rem;
+    }
+}
+
+svg {
+    max-width: 100%;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(44 143 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(44 143 255 / var(--tw-bg-opacity));
+}
+
+.text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(44 143 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary:hover {
+    --tw-text-opacity: 1;
+    color: rgb(44 143 255 / var(--tw-text-opacity));
+}
+
+.text-grayb2 {
+    --tw-text-opacity: 1;
+    color: rgb(178 184 198 / var(--tw-text-opacity));
+}
+
+.text-gray70 {
+    --tw-text-opacity: 1;
+    color: rgb(112 118 127 / var(--tw-text-opacity));
+}
+
+.borderDarkMode {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.bgDarkMode {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.bg-opacity-10 {
+    --tw-bg-opacity: 0.1;
+}
+
+.hover\:bg-opacity-10:hover {
+    --tw-bg-opacity: 0.1 !important;
+}

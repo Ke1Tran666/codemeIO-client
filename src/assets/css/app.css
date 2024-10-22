@@ -66,6 +66,11 @@ textarea {
     color: rgb(44 143 255 / var(--tw-text-opacity));
 }
 
+.text-secondary {
+    --tw-text-opacity: 1;
+    color: rgb(255 105 90 / var(--tw-text-opacity));
+}
+
 .hover\:text-primary:hover {
     --tw-text-opacity: 1;
     color: rgb(44 143 255 / var(--tw-text-opacity));
@@ -110,4 +115,18 @@ textarea {
 
 .hover\:bg-opacity-10:hover {
     --tw-bg-opacity: 0.1 !important;
+}
+
+.button-styles:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    background-color: #fff;
+    opacity: .15;
+    width: 0;
+    height: 100%;
+    transition: width .5s cubic-bezier(.165, .84, .44, 1);
+    z-index: -1;
 }

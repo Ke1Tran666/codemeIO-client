@@ -606,24 +606,24 @@ video {
   top: 0px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .mt-auto {
@@ -662,6 +662,11 @@ video {
   height: 2.5rem;
 }
 
+.size-4 {
+  width: 1rem;
+  height: 1rem;
+}
+
 .size-5 {
   width: 1.25rem;
   height: 1.25rem;
@@ -688,6 +693,10 @@ video {
   height: 180px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -706,6 +715,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-\[120px\] {
+  min-width: 120px;
 }
 
 .max-w-full {
@@ -825,9 +838,22 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.fill-transparent {
+  fill: transparent;
+}
+
+.stroke-current {
+  stroke: currentColor;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-3 {
@@ -848,6 +874,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -858,6 +889,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -866,8 +901,13 @@ video {
   padding-top: 2rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-lg {
@@ -885,11 +925,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -897,6 +932,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-medium {
@@ -907,18 +946,14 @@ video {
   font-weight: 600;
 }
 
-.font-extrabold {
-  font-weight: 800;
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .shadow-sm {
@@ -1014,6 +1049,11 @@ video {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:text-sm {
